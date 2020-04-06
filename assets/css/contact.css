@@ -1,0 +1,120 @@
+/* Tombol Menuju Chat Langsung ke Messaging App Ala Igniel
+Dilarang keras mengubah nama atribut yang ada di dalam kode ini */
+:root {
+    --ignielKontak-WA: #25D366; /* Warna WhatsApp */
+    --ignielKontak-Messenger: #0084FF; /* Warna Messenger */
+    --ignielKontak-WA-uname: "6285334855333"; /* Nomor WhatsApp */
+    --ignielKontak-WA-text: "Hai,%20saya%20menghubungi%20melalui%20web%20kontak%20di%20vpn%20benuanet.com"; /* Pesan WhatsApp */
+    --ignielKontak-Messenger-uname: "ibnu.hr"; /* Username Messenger */
+}
+#ignielKontak {text-align:center; width:100%; line-height:0px}
+#ignielKontak svg {width:55px;height:55px}
+#ignielKontak a {text-decoration:none}
+#ignielKontak .WA svg path {fill:var(--ignielKontak-WA)}
+#ignielKontak .Line svg {width: 70px; height: 70px; margin-bottom: -20px; margin-left:20px} #ignielKontak .Line svg path {fill:var(--ignielKontak-Line)}
+#ignielKontak .Tele svg path {fill:var(--ignielKontak-Tele)}
+#ignielKontak .Messenger svg path {fill:var(--ignielKontak-Messenger)}
+#ignielKontak .BBM svg path {fill:var(--ignielKontak-BBM)}
+#ignielKontak .WA, #ignielKontak .Line, #ignielKontak .Tele, #ignielKontak .Messenger, #ignielKontak .BBM {display:inline-block; width:90px; text-align:center; margin:0 5px}
+#ignielKontak .onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    margin-top:5px;
+}
+#ignielKontak .onoffswitch-checkbox {
+    display: none;
+}
+#ignielKontak .onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+#ignielKontak .onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 25px; padding: 0; line-height: 25px;
+    color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold; text-align: center;
+    box-sizing: border-box;
+}
+#ignielKontak .WA .onoffswitch-label {
+    display: block; overflow: hidden;
+    border: 2px solid var(--ignielKontak-WA); border-radius: 20px;
+}
+#ignielKontak .WA .onoffswitch-inner:before {
+    content: var(--ignielKontak-WA-uname);
+    background-color: var(--ignielKontak-WA); color: #FFFFFF;
+    font-size:11px;
+}
+#ignielKontak .WA .onoffswitch-inner:after {
+    content: "WhatsApp";
+    color: var(--ignielKontak-WA);
+    font-size:14px;
+}
+#ignielKontak .WA:hover .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+#ignielKontak .Line .onoffswitch-label {
+    display: block; overflow: hidden;
+    border: 2px solid var(--ignielKontak-Line); border-radius: 20px;
+}
+#ignielKontak .Line .onoffswitch-inner:before {
+    content: var(--ignielKontak-Line-uname);
+    background-color: var(--ignielKontak-Line); color: #FFFFFF;
+    font-size:11px;
+}
+#ignielKontak .Line .onoffswitch-inner:after {
+    content: "Line";
+    color: var(--ignielKontak-Line);
+    font-size:14px;
+}
+#ignielKontak .Line:hover .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+#ignielKontak .Tele .onoffswitch-label {
+    display: block; overflow: hidden;
+    border: 2px solid var(--ignielKontak-Tele); border-radius: 20px;
+}
+#ignielKontak .Tele .onoffswitch-inner:before {
+    content: var(--ignielKontak-Tele-uname);
+    background-color: var(--ignielKontak-Tele); color: #FFFFFF;
+    font-size:11px;
+}
+#ignielKontak .Tele .onoffswitch-inner:after {
+    content: "Telegram";
+    color: var(--ignielKontak-Tele);
+    font-size:14px;
+}
+#ignielKontak .Tele:hover .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+#ignielKontak .Messenger .onoffswitch-label {
+    display: block; overflow: hidden;
+    border: 2px solid var(--ignielKontak-Messenger); border-radius: 20px;
+}
+#ignielKontak .Messenger .onoffswitch-inner:before {
+    content: var(--ignielKontak-Messenger-uname);
+    background-color: var(--ignielKontak-Messenger); color: #FFFFFF;
+    font-size:11px;
+}
+#ignielKontak .Messenger .onoffswitch-inner:after {
+    content: "Messenger";
+    color: var(--ignielKontak-Messenger);
+    font-size:14px;
+}
+#ignielKontak .Messenger:hover .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+#ignielKontak .BBM .onoffswitch-label {
+    display: block; overflow: hidden;
+    border: 2px solid var(--ignielKontak-BBM); border-radius: 20px;
+}
+#ignielKontak .BBM .onoffswitch-inner:before {
+    content: var(--ignielKontak-BBM-uname);
+    background-color: var(--ignielKontak-BBM); color: #FFFFFF;
+    font-size:11px;
+}
+#ignielKontak .BBM .onoffswitch-inner:after {
+    content: "BBM";
+    color: var(--ignielKontak-BBM);
+    font-size:14px;
+}
+#ignielKontak .BBM:hover .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
